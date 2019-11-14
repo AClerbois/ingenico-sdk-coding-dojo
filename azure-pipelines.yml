@@ -1,6 +1,6 @@
 pool:
   name: Default
-  
+
 steps:
 - task: DotNetCoreCLI@2
   displayName: 'dotnet build'
@@ -21,4 +21,3 @@ steps:
     PathtoPublish: '$(build.artifactstagingdirectory)'
     ArtifactName: '$(Parameters.ArtifactName)'
   condition: succeededOrFailed()
-
