@@ -104,6 +104,17 @@ static async Task Main()
     }
 }
 ```
+
+#### Ingenico Proxy
+```csharp
+new HttpClient(
+    new HttpClientHandler()
+    {
+        Proxy = new WebProxy("http://127.0.0.1:3128")
+    });
+```
+
+
 source: [https://docs.microsoft.com/fr-fr/dotnet/api/system.net.http.httpclient?view=netstandard-2.0](https://docs.microsoft.com/fr-fr/dotnet/api/system.net.http.httpclient?view=netstandard-2.0)
 
 Go futher: 
